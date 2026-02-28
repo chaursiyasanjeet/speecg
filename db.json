@@ -1,0 +1,43 @@
+{
+  "clients": [
+    {
+      "id": "nkn4ZBhLApBRhvEcYGYxi",
+      "name": "VeryImportantClient"
+    },
+    {
+      "id": "sqKCG8q-QJ1kJesCTQJY3",
+      "name": "ImportantClient"
+    },
+    {
+      "id": "eyn4ZBhZgIBRhvEcYGYyj",
+      "name": "Client"
+    }
+  ],
+  "users": [
+    {
+      "id": "PgW92LVLS1EdVBpXFt1nv",
+      "client": {
+        "id": "nkn4ZBhLApBRhvEcYGYxi",
+        "name": "VeryImportantClient"
+      },
+      "dateOfBirth": "1990-01-01T00:00:00.000Z",
+      "email": "john.doe@example.com",
+      "firstname": "John",
+      "surname": "Doe",
+      "hasCreditLimit": false
+    },
+    {
+      "id": "B8Xnx3OiuyEyp6IhuE6xH",
+      "client": {
+        "id": "sqKCG8q-QJ1kJesCTQJY3",
+        "name": "ImportantClient"
+      },
+      "dateOfBirth": "1985-06-15T00:00:00.000Z",
+      "email": "jane.smith@example.com",
+      "firstname": "Jane",
+      "surname": "Smith",
+      "hasCreditLimit": true,
+      "creditLimit": 20000
+    }
+  ]
+}

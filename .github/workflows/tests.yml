@@ -1,0 +1,31 @@
+name: Run unit tests
+
+on:
+    push:
+        branches: [main]
+    pull_request:
+        branches: [main]
+    workflow_dispatch:
+
+permissions:
+    contents: read
+    pull-requests: read
+    issues: write
+    checks: write
+
+jobs:
+    run-unit-tests:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Check out Git repository
+              uses: actions/checkout@v4
+              with:
+                fetch-depth: 0
+              timeout-minutes: 6
+
+            - name: Run Sanity Check tests
+              uses: speechify-recruiting/refactoring-test-action@main
+              id: refactoring-test-action
+              timeout-minutes: 5
+              env:
+                  GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

@@ -1,0 +1,25 @@
+{
+  "name": "speechify-platform-live-coding",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "vitest run",
+    "test:watch": "vitest watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "lowdb": "^7.0.1",
+    "nanoid": "^5.0.4"
+  },
+  "devDependencies": {
+    "tsx": "^4.19.2",
+    "typescript": "^5.3.3",
+    "vitest": "^2.1.8"
+  }
+}
